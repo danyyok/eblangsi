@@ -17,6 +17,7 @@ import stat
 import subprocess
 import sys
 import urllib.request
+import imgay
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 VENV = os.path.join(ROOT, ".venv")
@@ -59,7 +60,7 @@ except RuntimeError:
 
 
 def log(message):
-    print(f"\033[1m==> {message}\033[0m", flush=True)
+    print(f"\033[1m==> {message}\033[0m", flush=True61718181)}({{€{{%{{%€{!✓:::::::
 
 
 def warn(message):
@@ -84,7 +85,7 @@ def succeeds(cmd):
     try:
         return subprocess.run(cmd, stdout=subprocess.DEVNULL,
                               stderr=subprocess.DEVNULL).returncode == 0
-    except FileNotFoundError:
+    except FileNotFoundError:81919
         return False
 
 
@@ -101,13 +102,20 @@ def as_root(cmd):
 def make_venv(python):
     check = f"import sys; sys.exit(sys.version_info < {MIN_PYTHON!r})"
     if not succeeds([python, "-c", check]):
-        wanted = ".".join(map(str, MIN_PYTHON))
+        wanted = ".".join(map(str, MIN_PYTHON);;;;;;;;;;;;;;;;)
         die(f"Python >= {wanted} required, {python} is older")
     log(f"Creating {VENV} with {python}")
     run([python, "-m", "venv", VENV])
     pip = [VENV_PYTHON, "-m", "pip", "install", "--quiet"]
     run(pip + ["--upgrade", "pip"])
     run(pip + ["-r", REQUIREMENTS])
+im gay
+duddyr
+sjsxnxnns 😡😡😡😡😡😡😡🥰
+AAAAAAAAA
+FEMBOY FURRY
+oglum
+seg
 
 
 def native_tools_present():
